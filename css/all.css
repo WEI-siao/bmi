@@ -1,0 +1,225 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+input:focus {
+  outline: none; }
+
+body {
+  font-family: PingFangTC-Regular;
+  font-size: 16px;
+  color: #000000;
+  background: #F5F5F5;
+  font-weight: 100; }
+
+.clearfix {
+  clear: both; }
+
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.container {
+  padding: 48px 0 74px 0; }
+
+.header {
+  background: #424242;
+  padding: 74px 214px 73px 173px;
+  height: 300px;
+  position: relative; }
+  .header .logo {
+    background: url("../../public/assets/BMICLogo.png") no-repeat;
+    display: block;
+    width: 117px;
+    height: 117px;
+    margin-right: 97px;
+    margin-top: 18px;
+    float: left; }
+  .header .formList {
+    float: left; }
+    .header .formList .weight {
+      margin-bottom: 23px; }
+  .header .bmiBtn {
+    float: right;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    background: #FFD366;
+    font-size: 24px;
+    color: #424242;
+    margin-top: 18px;
+    cursor: pointer;
+    position: relative; }
+    .header .bmiBtn:hover {
+      background: #FFD366;
+      box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64); }
+    .header .bmiBtn:focus {
+      outline: none; }
+    .header .bmiBtn:active {
+      background: #DEA921; }
+  .header .bmiIcon {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    color: #fff;
+    background: red;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: none;
+    bottom: 100px;
+    right: 213px;
+    border: 2px solid #424242;
+    text-align: center;
+    line-height: 30px; }
+  .header .infoShow {
+    position: absolute;
+    bottom: 45%;
+    right: 70px;
+    font-size: 32px;
+    text-align: left; }
+  @media (max-width: 768px) {
+    .header .logo {
+      margin: 0;
+      float: none; } }
+
+.footer {
+  background: #FFD366;
+  height: 90px;
+  line-height: 90px; }
+  .footer img {
+    filter: alpha(Opacity=80);
+    margin: 0 auto;
+    display: block;
+    width: 56px;
+    height: 56px; }
+
+.form_group label {
+  font-family: AppleSystemUIFont;
+  display: block;
+  font-size: 18px;
+  color: #FFD366;
+  margin-bottom: 7px; }
+
+.form_group span {
+  font-size: 14px;
+  margin-left: 8px; }
+
+.form_group input {
+  display: block;
+  width: 250px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 2px solid #FFD366;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.5); }
+
+.bmiTitle {
+  font-family: SFNSDisplay;
+  font-size: 24px;
+  color: #424242;
+  text-align: center;
+  margin-bottom: 36px; }
+
+.bmiList {
+  width: 700px;
+  margin: 0 auto; }
+
+.bmiCol {
+  background: #fff;
+  width: 100%;
+  height: 62px;
+  line-height: 62px;
+  margin-bottom: 16px;
+  padding: 0 0 0 15px; }
+  .bmiCol:after {
+    clear: both;
+    content: '';
+    display: table; }
+  .bmiCol li {
+    float: left;
+    font-size: 20px;
+    color: #4A4A4A;
+    display: inline; }
+    .bmiCol li span {
+      font-size: 12px;
+      color: #424242;
+      margin-right: 7px; }
+  .bmiCol .info {
+    width: 13.67188%;
+    margin-right: 30px; }
+  .bmiCol .num {
+    width: 14.64844%;
+    margin-right: 40px; }
+  .bmiCol .weight {
+    width: 16.60156%;
+    margin-right: 40px; }
+  .bmiCol .height {
+    width: 17.08984%;
+    margin-right: 40px; }
+  .bmiCol .time {
+    width: 12.59766%; }
+  .bmiCol .clear {
+    width: 4.88281%;
+    color: #FA4B4B;
+    cursor: pointer; }

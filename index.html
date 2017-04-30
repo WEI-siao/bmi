@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BMI測量</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <h1 class="logo"> </h1>
+        <div class="formList">
+          <div class="form_group weight">
+            <label>身高<span>cm</span></label>
+            <input type="number" id="cm" placeholder="請輸入身高">
+          </div>
+          <div class="form_group">
+            <label>體重<span>kg</span></label>
+            <input type="number" id="kg" placeholder="請輸入體重">
+          </div>
+        </div>
+        <div class="bmiBtn" id="bmiBtn">看結果</div><span class="bmiIcon" id="bmiIcon"><img src="../public/assets/icons_loop.png"></span><span class="infoShow" id="infoShow"></span>
+      </div>
+      <div class="content">
+        <div class="container">
+          <h2 class="bmiTitle">BMI 紀錄</h2>
+          <div class="bmiList" id="bmiList"></div>
+        </div>
+      </div>
+      <div class="footer"><img src="assets/BMICLogo.png"></div>
+    </div>
+    <script type="text/javascript" src="js/all.js"></script>
+  </body>
+</html>
