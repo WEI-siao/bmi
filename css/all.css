@@ -76,7 +76,7 @@ body {
   height: 300px;
   position: relative; }
   .header .logo {
-    background: url("../../public/assets/BMICLogo.png") no-repeat;
+    background: url("../assets/BMICLogo.png") no-repeat;
     display: block;
     width: 117px;
     height: 117px;
